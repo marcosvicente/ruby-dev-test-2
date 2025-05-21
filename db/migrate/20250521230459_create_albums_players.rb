@@ -2,7 +2,7 @@ class CreateAlbumsPlayers < ActiveRecord::Migration[5.2]
   def up
     create_table :album_players do |t|
       t.references :player, foreign_key: true
-      t.references :albums, foreign_key: true
+      t.references :album, foreign_key: true
 
       t.timestamps
     end

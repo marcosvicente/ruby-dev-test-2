@@ -1,11 +1,17 @@
+# == Schema Information
+#
+# Table name: albums
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 fijacion:
   name: Fijación Oral, Vol. 1
-  player: shakira
 
 fixation:
   name: Oral Fixation, Vol. 2
-  player: shakira
 
 fixation:
   name: She Wolf
-  player: shakira

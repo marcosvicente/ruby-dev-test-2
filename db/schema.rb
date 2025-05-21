@@ -14,10 +14,10 @@ ActiveRecord::Schema.define(version: 2025_05_21_230931) do
 
   create_table "album_players", force: :cascade do |t|
     t.integer "player_id"
-    t.integer "albums_id"
+    t.integer "album_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["albums_id"], name: "index_album_players_on_albums_id"
+    t.index ["album_id"], name: "index_album_players_on_album_id"
     t.index ["player_id"], name: "index_album_players_on_player_id"
   end
 
