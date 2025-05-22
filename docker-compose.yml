@@ -1,17 +1,7 @@
 version: "3.6"
 
 services:
-  db:
-    image: postgres:15.4-alpine3.18
-    volumes:
-      - ./tmp/db:/var/lib/postgresql/data
-    environment:
-      POSTGRES_PASSWORD: postgres
-    ports:
-      - "5432:5432"
   web:
-    depends_on:
-      - db
     environment:
       - LOCAL=localhost
     build: .
